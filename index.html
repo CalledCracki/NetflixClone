@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <title>Netflix Clone | Responsive UI Design</title>
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="assets/images/logo.png" alt="Netflix Logo"></a>
+        <ul class="navigation">
+            <li><a href="#"><b>Startseite</b></a></li>
+            <li><a href="#">Serien</a></li>
+            <li><a href="#">Filme</a></li>
+            <li><a href="#">Neu und beliebt</a></li>
+            <li><a href="#">Meine Liste</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search ...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="assets/images/bg.png" alt="Background" class="bg">
+        <div class="content">
+            <img src="assets/images/hdg.png" alt="HausDesGeldes" class="movieTitle">
+            <h4>
+                <span>2021</span>
+                <span><i>16+</i></span>
+                <span>5 Teile</span>
+                <span>Spanisch</span>
+            </h4>
+            <p>Ein Verbrechergenie manipuliert für seinen Plan die Polizei,
+            wobei sich acht Diebe mit Geiseln in der spanischen Banknotendruckerei
+            einschließen.</p>
+            <div class="buttons">
+                <a href="#"><i class="fa-solid fa-play"></i>  Abspielen</a>
+                <a href="#" onclick="toggleVideo();"><i class="fa-solid fa-circle-info"></i>  Weitere Infos</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="trailer">
+        <video src="assets/videos/trailer.mp4" controls="true"></video>
+        <img src="assets/images/close.png" class="close" alt="Close" onclick="toggleVideo();">
+    </div>
+    
+    <script src="assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/b9f34667c7.js" crossorigin="anonymous"></script>
+</body>
+</html>
